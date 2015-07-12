@@ -18,6 +18,6 @@ with(data, plot(datetime, sub.metering.1, type = "l", ylim = c(0, 40),
         ylab = "Energy submetering", xlab = "", col = "black"))
 with(data, points(datetime, sub.metering.2, type = "l", col = "red"))
 with(data, points(datetime, sub.metering.3, col = "blue", type = "l"))
-legend("topright", pch = "-", col = c("black", "red", "blue"), 
+legend("topright", lty = "solid", col = c("black", "red", "blue"), 
        legend = c("sub_metering_1", "sub_metering_2", "sub_metering_3"))
 dev.off()
